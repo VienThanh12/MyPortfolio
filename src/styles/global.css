@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+main {
+  min-height: calc(100vh - 96px);
+}
+
+.dark .highlight-white {
+  box-shadow: inset 0 1px 0 0 #ffffff1a;
+}
