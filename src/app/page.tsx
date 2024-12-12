@@ -31,12 +31,7 @@ export default function Home() {
             </p>
             <p className="">
               Through my projects, code repositories, and collaborations, I hope to demonstrate my proficiency in various programming languages, frameworks, and tools.
-              <a target="_blank" href={SOCIAL_NETWORK_LINKS.unsplash}>
-                {/* <span className="underline font-bold decoration-sky-400 transition duration-200 hover:decoration-sky-600">
-                  Unsplash
-                </span> */}
-              </a>
-              .
+
             </p>
           </div>
         </section>
