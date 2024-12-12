@@ -1,4 +1,4 @@
-export type SocialNetworkType = 'linkedin' | 'github' | 'telegram' | 'unsplash' | 'instagram';
+export type SocialNetworkType = 'linkedin' | 'github';
 export interface ExperienceItem {
   time: string;
   company: string;
