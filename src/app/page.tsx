@@ -68,11 +68,13 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-6 dark:text-gray-100"> Education </h3>
           <div className="mb-8">
             <h4 className="text-lg font-bold dark:text-gray-100"> Seinäjoki University Of Applied Science</h4>
+            <p> Grade: 4.9/5 </p>
             <p> Bachelor of Automation Engineer </p>
             <p className="text-slate-400 text-sm dark:text-slate-500"> 2022 - 2025 </p>
           </div>
           <div>
             <h4 className="text-lg font-bold dark:text-gray-100"> Le Quy Don High School For The Gifted </h4>
+            <p> Grade: 9.5/10 </p>
             <p> Computer Science </p>
             <p className="text-slate-400 text-sm dark:text-slate-500"> 2019 - 2022 </p>
           </div>

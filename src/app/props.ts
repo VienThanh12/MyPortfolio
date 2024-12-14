@@ -138,4 +138,28 @@ export const personalProjects: ProjectItem[] = [
     url: 'https://hackathon-junction-projects.vercel.app',
     image: '/hackathon_project.png',
   },
+  {
+    title: 'Country Project',
+    description:
+      'Getting some basic information of a country with ReactJS.',
+    stack: ['React.js', 'Rest-api', 'Render'],
+    url: 'https://github.com/VienThanh12/Country-Project',
+    image: '/Country_Project.png',
+  },
+  {
+    title: 'Blog Project',
+    description:
+      'An online website where individuals regularly publish written content in the form of posts or articles.',
+    stack: ['React.js', 'NodeJS', 'Express.js', 'Mongoose', 'MongoDB'],
+    url: 'https://github.com/VienThanh12/Blog-Project',
+    image: '/Blog_Project.png',
+  },
+  {
+    title: 'Phone Book Project',
+    description:
+      'A phonebook to save name and number of a person.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'Mongoose', 'MongoDB'],
+    url: 'https://github.com/VienThanh12/Phone-Book-Project',
+    image: '/Phonebook_Project.png',
+  },
 ];

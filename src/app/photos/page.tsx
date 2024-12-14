@@ -1,5 +1,4 @@
-// src/components/Certificates.tsx
-"use client"; // <-- Add this line
+"use client"; // Ensure this is at the very top
 
 import { useEffect, useState } from 'react';
 import { ICertificate, certificates as certificateData } from './certificates';
