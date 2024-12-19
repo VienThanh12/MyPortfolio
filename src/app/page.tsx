@@ -34,15 +34,13 @@ export default function Home() {
           <div className="md:col-span-3 leading-relaxed">
             <p>
               Hello, I am Ha Vien, an ambitious engineering student with a passion for innovation and
-              problem-solving. Currently based in Finland, I am deepening my expertise in computer science.
+              problem-solving. Currently based in Finland, I am deepening my expertise in 
+              
+              <p className="underline font-bold text-yellow-500 hover:text-yellow-600">
+              Computer Science.
+              </p>{' '} 
             </p>
-            <p className="mt-4">
-              I primarily work with{' '}
-              <span className="underline font-bold text-yellow-500 hover:text-yellow-600">
-                JavaScript
-              </span>{' '}
-              and its various frameworks and libraries.
-            </p>
+            
             <p className="mt-4">
               Through projects, repositories, and collaborations, I showcase my proficiency in programming
               languages, frameworks, and tools.
