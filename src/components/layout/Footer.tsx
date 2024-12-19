@@ -1,5 +1,3 @@
-// components/layout/Footer.tsx
-
 import dayjs from 'dayjs';
 import { SocialNetworkIcons } from '../SocialNetwork';
 
@@ -12,7 +10,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">About</h3>
           <p className="text-sm leading-relaxed">
-            I'm Vien Ha, a passionate software engineer based in Finland. I specialize in building scalable web applications and continuously strive to learn and implement the latest technologies.
+            I&apos;m Vien Ha, a passionate software engineer based in Finland. I specialize in building scalable web applications and continuously strive to learn and implement the latest technologies.
           </p>
         </div>
         
