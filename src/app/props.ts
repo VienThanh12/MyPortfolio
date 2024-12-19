@@ -128,7 +128,7 @@ export const personalProjects: ProjectItem[] = [
       'Personal portfolio website showcasing  my diverse skillset in web development, with a collection of projects and work experiences.',
     stack: ['Next.js', 'Tailwind CSS', 'Vercel'],
     url: '',
-    image: '/Portfolio_project.png',
+    image: '/Portfolio_img.png',
   },
   {
     title: 'Hackathon Junction Project',
