@@ -92,7 +92,6 @@ export default function Home() {
               association: 'SeAMK - Seinäjoki University of Applied Sciences',
               description:
                 'Our team achieved the 1st runner-up, Silver Award 🥈 in the last round of the Project Management Championship Competition. This achievement was the effort of all three of us.',
-              certificate: 'CERTIFICATE.pdf',
             },
             {
               title: 'First Prize City Excellent Student',
