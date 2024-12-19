@@ -1,19 +1,17 @@
 import { techStacks } from '@/app/props';
 
-const Stacks = (props: any) => {
-  const { className } = props;
+const Stacks = (props: { className?: string }) => {
+  const { className = '' } = props;
   return (
-    <div className={'tech-stacks flex flex-wrap gap-x-2 ' + className}>
-      {techStacks.map((item, idx) => {
-        return (
-          <div
-            key={idx}
-            className="bg-gray-200 transition duration-500 cursor-grab hover:bg-gray-300 hover:scale-105 dark:bg-slate-700 dark:hover:bg-slate-600 dark:hover:text-gray-50  rounded-md inline-block px-2 py-1 mb-2 text-sm"
-          >
-            {item}
-          </div>
-        );
-      })}
+    <div className={`tech-stacks flex flex-wrap gap-2 ${className}`}>
+      {techStacks.map((item, idx) => (
+        <div
+          key={idx}
+          className="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-200 transition-transform duration-300 hover:scale-105 hover:bg-gray-300 dark:hover:bg-slate-600 cursor-pointer"
+        >
+          {item}
+        </div>
+      ))}
     </div>
   );
 };

@@ -16,11 +16,10 @@ interface BadgeProps {
   color?: keyof typeof MAP_COLOR;
 }
 
-const Badge = (props: BadgeProps) => {
-  const { children, color = 'gray' } = props;
+const Badge = ({ children, color = 'gray' }: BadgeProps) => {
   return (
     <span
-      className={`inline-flex items-center rounded-md ${MAP_COLOR[color][0]} px-2 py-1 text-xs font-medium ${MAP_COLOR[color][1]} ring-1 ring-inset ${MAP_COLOR[color][2]}`}
+      className={`inline-flex items-center justify-center rounded-full ${MAP_COLOR[color][0]} ${MAP_COLOR[color][1]} ring-1 ring-inset ${MAP_COLOR[color][2]} px-3 py-1 text-xs font-medium leading-snug transition-transform transition-colors duration-300 hover:brightness-110`}
     >
       {children}
     </span>

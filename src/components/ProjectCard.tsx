@@ -8,25 +8,41 @@ const ProjectCard = (props: ProjectCardProps) => {
   const { title, description, stack, url, image } = props;
 
   return (
-    <a target="_blank" href={url}>
-      <div className="card bg-white min-h-28 border-slate-100 highlight-white dark:bg-slate-800 overflow-hidden dark:border-slate-500 ring-1 transition duration-300 ring-slate-900/5 shadow-xl rounded-xl mb-6 flex md:gap-4 flex-col md:flex-row">
-        <div className="left md:w-5/12 pt-[45%] md:pt-0  dark:border-slate-600 relative border-b md:border-b-0">
-          <Image style={{ objectFit: 'cover', objectPosition: '0 0' }} src={image} alt="project" fill />
+    <a 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      href={url}
+      className="block group"
+    >
+      <div className="card bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-transform duration-300 flex flex-col md:flex-row">
+        
+        {/* Image Section */}
+        <div className="relative md:w-5/12 w-full h-56 md:h-auto overflow-hidden">
+          <Image 
+            src={image} 
+            alt={title} 
+            fill
+            className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+          />
         </div>
-        <div className="right md:w-7/12 md:p-6 p-4">
-          <p className="font-bold text-lg dark:text-white">{title}</p>
-          <p className="py-2">{description}</p>
-          <div>
-            {stack?.length ? (
-              <div className="flex flex-wrap gap-2 ">
-                {stack.map((item, idx) => (
-                  <Badge key={idx} color="gray">
-                    {item}
-                  </Badge>
-                ))}
-              </div>
-            ) : null}
-          </div>
+
+        {/* Content Section */}
+        <div className="md:w-7/12 p-4 md:p-6 flex flex-col justify-center">
+          <h3 className="font-semibold text-xl dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+            {title}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">
+            {description}
+          </p>
+          {stack?.length ? (
+            <div className="flex flex-wrap gap-2 mt-auto">
+              {stack.map((item, idx) => (
+                <Badge key={idx} color="gray">
+                  {item}
+                </Badge>
+              ))}
+            </div>
+          ) : null}
         </div>
       </div>
     </a>
