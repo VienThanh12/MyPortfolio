@@ -46,13 +46,7 @@ export default function Home() {
               languages, frameworks, and tools.
             </p>
 
-            {/* Show stacks and social icons for mobile */}
-            <div className="mt-8 md:hidden">
-              <Stacks className="flex flex-wrap gap-4" />
-              <div className="mt-4">
-                <SocialNetworkIcons />
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>
