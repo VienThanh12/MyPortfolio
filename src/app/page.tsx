@@ -81,65 +81,83 @@ export default function Home() {
         </section>
 
         {/* Honors & Awards Section */}
-        <section id="honors" className="mb-14">
-          <h3 className="text-3xl font-bold mb-6 dark:text-gray-200">🎖 Honors & Awards</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {[
-              {
-                title: 'National Level Project Management Championship',
-                issuer: 'IPMA Young Crew Finland',
-                date: 'Apr 2024',
-                association: 'SeAMK - Seinäjoki University of Applied Sciences',
-                description:
-                  'Our team achieved the 1st runner-up, Silver Award 🥈 in the last round of the Project Management Championship Competition.',
-              },
-              {
-                title: 'First Prize City Excellent Student',
-                issuer: 'Ministry of Education and Training of Vietnam',
-                date: 'Apr 2022',
-                association: 'Le Quy Don High School for the Gifted - Danang',
-                description:
-                  'Competitive Programming: I solved practical challenges and translated them into programming solutions.',
-              },
-              {
-                title: 'Second Prize City Information Technology Competition',
-                issuer: 'Ministry of Education and Training of Vietnam',
-                date: 'Apr 2022',
-                association: 'Le Quy Don High School for the Gifted - Danang',
-              },
-              {
-                title: 'Consolation Prize - Olympiad in Informatics (Central Highlands of Vietnam)',
-                issuer: 'Ministry of Education and Training of Vietnam',
-                date: 'Mar 2022',
-                association: 'Le Quy Don High School for the Gifted - Danang',
-              },
-              {
-                title: 'Silver Medal - Olympiad in Informatics (Central Highlands of Vietnam)',
-                issuer: 'Ministry of Education and Training of Vietnam',
-                date: 'Mar 2021',
-                association: 'Le Quy Don High School for the Gifted - Danang',
-              },
-            ].map((award, idx) => (
-              <div
-                key={idx}
-                className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              >
-                <h4 className="text-xl font-semibold dark:text-yellow-400 text-gray-700">
-                  {award.title}
-                </h4>
-                <p className="text-sm text-gray-500 dark:text-gray-300 mt-1">
-                  <span className="font-medium">Issued by:</span> {award.issuer} · {award.date}
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-300">
-                  <span className="font-medium">Associated with:</span> {award.association}
-                </p>
-                {award.description && (
-                  <p className="text-gray-700 dark:text-gray-400 mt-2">{award.description}</p>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
+      <section id="honors" className="mb-14 px-4 lg:px-0">
+        <h3 className="text-3xl font-bold mb-6 text-center dark:text-gray-200">🎖 Honors & Awards</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: 'National Level Project Management Championship',
+              issuer: 'IPMA Young Crew Finland',
+              date: 'Apr 2024',
+              association: 'SeAMK - Seinäjoki University of Applied Sciences',
+              description:
+                'Our team achieved the 1st runner-up, Silver Award 🥈 in the last round of the Project Management Championship Competition. This achievement was the effort of all three of us.',
+              certificate: 'CERTIFICATE.pdf',
+            },
+            {
+              title: 'First Prize City Excellent Student',
+              issuer: 'Ministry of Education and Training of Vietnam',
+              date: 'Apr 2022',
+              association: 'Le Quy Don High School for the Gifted - Danang',
+              description:
+                'Competitive Programming: I solved challenges with lots of practical problems and translated them into computer programming solutions.',
+            },
+            {
+              title: 'Second Prize City Information Technology Competition',
+              issuer: 'Ministry of Education and Training of Vietnam',
+              date: 'Apr 2021/2022',
+              association: 'Le Quy Don High School for the Gifted - Danang',
+            },
+            {
+              title: 'Consolation Prize - Olympiad in Informatics (Central Highlands of Vietnam)',
+              issuer: 'Ministry of Education and Training of Vietnam',
+              date: 'Mar 2022',
+              association: 'Le Quy Don High School for the Gifted - Danang',
+            },
+            {
+              title: 'Consolation Prize - Olympiad in Informatics (Northern Coast of Vietnam)',
+              issuer: 'Ministry of Education and Training of Vietnam',
+              date: 'Aug 2021',
+              association: 'Le Quy Don High School for the Gifted - Danang',
+            },
+            {
+              title: 'Silver Medal - Olympiad in Informatics (Central Highlands of Vietnam)',
+              issuer: 'Ministry of Education and Training of Vietnam',
+              date: 'Mar 2021',
+              association: 'Le Quy Don High School for the Gifted - Danang',
+            },
+          ].map((award, idx) => (
+            <div
+              key={idx}
+              className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out"
+            >
+              <h4 className="text-xl font-semibold dark:text-yellow-400 text-gray-700 mb-2">
+                {award.title}
+              </h4>
+              <p className="text-sm text-gray-500 dark:text-gray-300">
+                <span className="font-medium">Issued by:</span> {award.issuer} · {award.date}
+              </p>
+              <p className="text-sm text-gray-500 dark:text-gray-300 mb-2">
+                <span className="font-medium">Associated with:</span> {award.association}
+              </p>
+              {award.description && (
+                <p className="text-gray-700 dark:text-gray-400 mt-2">{award.description}</p>
+              )}
+              {award.certificate && (
+                <a
+                  href={award.certificate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 dark:text-indigo-400 underline mt-4 inline-block"
+                >
+                  View Certificate
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
       </div>
 
      <div className="w-full lg:w-3/12 space-y-10 px-4 lg:px-0 mt-10 lg:mt-0">
