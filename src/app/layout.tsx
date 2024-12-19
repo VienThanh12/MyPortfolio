@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import '@/styles/global.css';
 import '@/styles/main.scss';
+import 'antd/dist/reset.css';
+
 import { lato } from './font';
 import dayjs from 'dayjs';
 import Footer from '@/components/layout/Footer';
