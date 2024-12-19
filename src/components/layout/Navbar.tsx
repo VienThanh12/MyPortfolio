@@ -59,11 +59,11 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`text-lg font-medium ${
+              className={`text-2xl font-bold ${
                 (link.href === "/#navbar" && pathname === "/") ||
                 pathname === link.href
-                  ? "text-indigo-600 dark:text-indigo-400"
-                  : "text-gray-800 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400"
+                  ? "text-amber-500 dark:text-amber-400"
+                  : "text-gray-800 dark:text-gray-100 hover:text-amber-500 dark:hover:text-amber-400"
               } transition-colors`}
             >
               {link.name}
