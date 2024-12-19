@@ -142,16 +142,6 @@ export default function Home() {
               {award.description && (
                 <p className="text-gray-700 dark:text-gray-400 mt-2">{award.description}</p>
               )}
-              {award.certificate && (
-                <a
-                  href={award.certificate}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-indigo-600 dark:text-indigo-400 underline mt-4 inline-block"
-                >
-                  View Certificate
-                </a>
-              )}
             </div>
           ))}
         </div>
