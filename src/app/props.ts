@@ -123,7 +123,7 @@ export interface ProjectItem {
 
 export const personalProjects: ProjectItem[] = [
   {
-    title: "Vien Ha's Porfolio",
+    title: "Vien Ha's Portfolio",
     description:
       'Personal portfolio website showcasing  my diverse skillset in web development, with a collection of projects and work experiences.',
     stack: ['Next.js', 'Tailwind CSS', 'Vercel'],
