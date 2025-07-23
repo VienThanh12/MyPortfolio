@@ -60,7 +60,7 @@ const SocialNetwork = () => {
           </a>
           <p className="text-sm flex items-center space-x-2">
             <span className="font-medium">Location:</span>
-            <span className="text-gray-600 dark:text-gray-400">Espoo, Finland</span>
+            <span className="text-gray-600 dark:text-gray-400">Helsinki, Finland</span>
           </p>
         </div>
 
