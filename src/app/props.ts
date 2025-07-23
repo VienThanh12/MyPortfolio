@@ -82,6 +82,8 @@ export const experienceProps: ExperienceItem[] = [
         'Microsoft Teams',
         'Rest API',
         'Git/Gitlab'
+        'AI Agents',
+        'MCP Server'
       ],
     },
     

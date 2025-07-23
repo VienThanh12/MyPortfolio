@@ -48,7 +48,7 @@ export default function RootLayout({
             Ha Vien
           </h1>
           <h2 className="text-lg md:text-xl font-light">
-            Software Engineer Intern @ Nokia | Bachelor of Automation Engineer
+            Software Engineer Intern at Nokia | Master of Computer Science at University of Helsinki
           </h2>
           <p className="mt-4 text-sm md:text-base max-w-md mx-auto font-light">
             Passionate about innovation, problem-solving, and creating impactful digital experiences.
