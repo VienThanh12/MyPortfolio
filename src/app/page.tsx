@@ -185,6 +185,18 @@ export default function Home() {
           <svg className="h-5 w-5 text-indigo-500" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2L1 9l11 7 11-7-11-7zm0 9.9L3.8 9 12 4.1 20.2 9 12 11.9zM23 16v2H1v-2h22z"/>
           </svg>
+          <span>University of Helsinki</span>
+        </h4>
+        <p className="dark:text-gray-300">Master of Computer Science</p>
+        <p className="text-slate-400 text-sm dark:text-slate-500 mt-1">2025 - 2027</p>
+      </div>
+
+      {/* University */}
+      <div>
+        <h4 className="text-lg font-bold dark:text-gray-100 flex items-center space-x-2">
+          <svg className="h-5 w-5 text-indigo-500" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2L1 9l11 7 11-7-11-7zm0 9.9L3.8 9 12 4.1 20.2 9 12 11.9zM23 16v2H1v-2h22z"/>
+          </svg>
           <span>Seinäjoki University Of Applied Science</span>
         </h4>
         <p className="mt-1 dark:text-gray-300">
