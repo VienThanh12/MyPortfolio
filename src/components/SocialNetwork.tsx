@@ -53,10 +53,10 @@ const SocialNetwork = () => {
 
         <div className="mb-4 text-gray-700 dark:text-gray-300">
           <a
-            href="mailto:Vien.Ha@nokia.fi"
+            href="mailto:Vien.Ha@nokia.com"
             className="block font-medium underline underline-offset-2 decoration-indigo-400 hover:decoration-indigo-600 dark:hover:decoration-indigo-200 transition-colors duration-200 mb-2"
           >
-            Vien.Ha@nokia.fi
+            Vien.Ha@nokia.com
           </a>
           <p className="text-sm flex items-center space-x-2">
             <span className="font-medium">Location:</span>
